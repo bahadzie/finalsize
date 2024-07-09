@@ -2,6 +2,16 @@
 output: github_document
 bibliography: vignettes/references.json
 link-citations: true
+# needed for webR
+format: html
+engine: knitr
+filters:
+  - webr
+
+# optional dark mode toggle
+theme:
+  light: flatly
+  dark: darkly
 ---
 
 ```{r, include = FALSE}
@@ -38,7 +48,7 @@ _{{ packagename }}_ relies on [Eigen](https://gitlab.com/libeigen/eigen) via [Rc
 
 The package can be installed from CRAN using
 
-```r
+```{webr-r}
 install.packages("finalsize")
 ```
 
@@ -56,7 +66,7 @@ pak::pak("{{ gh_repo }}")
 
 The main function in _{{ packagename }}_ is `final_size()`, which calculates the final size of an epidemic given the $R_0$.
 
-```{r}
+```{webr-r}
 # load finalsize
 library(finalsize)
 
@@ -68,7 +78,7 @@ Optionally, `final_size()` can estimate the epidemic size for populations with d
 We can use social contact data (here, from the _socialmixr_ package) to estimate the final size of an epidemic when the disease has an R<sub>0</sub> of 1.5, and given three age groups of interest --- 0-19, 20-39 and 40+.
 The under-20 age group is assumed to be fully susceptible to the disease, whereas individuals aged over 20 are only half as susceptible as those under 20.
 
-```{r}
+```{webr-r}
 # Load example POLYMOD social contacts data included with the package
 data(polymod_uk)
 
@@ -107,7 +117,7 @@ final_size(
 
 Helper functions included in _{{ packagename }}_ are provided to calculate the effective $R_0$, called $R_{eff}$, from demographic and susceptibility distribution data, while other helpers can convert between $R_0$ and the transmission rate $\lambda$.
 
-```{r}
+```{webr-r}
 # calculate the effective R0 using `r_eff()`
 r_eff(
   r0 = r0,
