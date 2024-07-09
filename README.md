@@ -9,9 +9,9 @@ MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/
 [![Project Status: Active – The project has reached a stable, usable
 state and is being actively
 developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
-[![R-CMD-check](https://github.com/epiverse-trace/finalsize/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/epiverse-trace/finalsize/actions/workflows/R-CMD-check.yaml)
+[![R-CMD-check](https://github.com/bahadzie/finalsize/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/bahadzie/finalsize/actions/workflows/R-CMD-check.yaml)
 [![Codecov test
-coverage](https://codecov.io/gh/epiverse-trace/finalsize/branch/main/graph/badge.svg)](https://app.codecov.io/gh/epiverse-trace/finalsize?branch=main)
+coverage](https://codecov.io/gh/bahadzie/finalsize/branch/main/graph/badge.svg)](https://app.codecov.io/gh/bahadzie/finalsize?branch=main)
 [![CRAN
 status](https://www.r-pkg.org/badges/version/finalsize)](https://CRAN.R-project.org/package=finalsize)
 <!-- badges: end -->
@@ -60,13 +60,13 @@ install.packages("finalsize")
 ### Development version
 
 The current development version of *finalsize* can be installed from
-[Github](https://github.com/epiverse-trace/finalsize) using the
-`remotes` package. The development version documentation can be found
+[Github](https://github.com/bahadzie/finalsize) using the `remotes`
+package. The development version documentation can be found
 [here](https://epiverse-trace.github.io/finalsize/dev/).
 
 ``` r
 if(!require("pak")) install.packages("pak")
-pak::pak("epiverse-trace/finalsize")
+pak::pak("bahadzie/finalsize")
 ```
 
 ## Quick start
@@ -162,13 +162,13 @@ vignettes](https://epiverse-trace.github.io/finalsize/), under
 ## Help
 
 To report a bug please open an
-[issue](https://github.com/epiverse-trace/finalsize/issues/new/choose).
+[issue](https://github.com/bahadzie/finalsize/issues/new/choose).
 
 ## Contribute
 
 Contributions to *finalsize* are welcomed. Please follow the [package
 contributing
-guide](https://github.com/epiverse-trace/finalsize/blob/main/.github/CONTRIBUTING.md).
+guide](https://github.com/bahadzie/finalsize/blob/main/.github/CONTRIBUTING.md).
 
 ## Code of conduct
 
